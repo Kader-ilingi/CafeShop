@@ -1,6 +1,6 @@
 ﻿using HotCatCafe.Model.Entities;
 
-namespace HotCatCafe.BLL.Abstracts.BaseAbstract
+namespace HotCatCafe.BLL.Repositories.Abstracts.BaseAbstract
 {
     public interface ICategoryRepository
     {
@@ -9,7 +9,7 @@ namespace HotCatCafe.BLL.Abstracts.BaseAbstract
         //Listeleme
         IEnumerable<Category> GetAllCategories(); //Bütün categorileri listeleyecektir
 
-        Category GetCategory(int id);//id ile kategory çağırmamızı sağlayacaktır
+        Category GetCategoryById(int id);//id ile kategory çağırmamızı sağlayacaktır
 
         IEnumerable<Category> GetActivesCategories();
         IEnumerable<Category> GetPassivesCategories();

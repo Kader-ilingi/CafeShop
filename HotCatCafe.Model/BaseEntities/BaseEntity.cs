@@ -10,7 +10,7 @@ namespace HotCatCafe.Model.BaseEntities
         //Baseentity'nin miras olarak bırakıldığı enititylerin instance'ı alındığı anda constructer'ın içerisindeki verilerle oluşturulacaktır.
         public BaseEntity()
         {
-            Status = DataStatus.INSERTED;
+            Status = DataStatus.Inserted;
             CreatedDate = DateTime.Now;//Verinin oluşturulma tarihini verir.
             CreatedComputerName = Environment.MachineName;//Verinin oluşturulduğu bilgissayarın adını verir.
             CreatedIpAddress = AddressFamily.InterNetwork;//Bu bize IP4 versiyonunun adresini verir..NET Framework ve .NET Core gibi platformlarda TCP/IP protokol ailesindeki adres türlerini temsil etmek için kullanılan bir enum değeridir. Bu değer, System.Net.Sockets namespace'i altında bulunur.IPv6 adreslerini temsil etmek için InterNetworkV6 kullanılır.

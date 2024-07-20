@@ -10,12 +10,22 @@ namespace HotCatCafe.DAL.Configurations
     {
         public void Configure(EntityTypeBuilder<AppUser> builder)
         {
+            //builder.HasMany(u => u.Orders)
+            //   .WithOne(o => o.AppUser)
+            //   .HasForeignKey(o => o.AppUserId)
+            //   .IsRequired()
+            //   .OnDelete(DeleteBehavior.Restrict); // Kullanıcı silinirse siparişi silme
 
             builder.Property(x => x.Address).IsRequired(false);
             builder.Property(x => x.BirthDate).IsRequired(false);
+            builder.HasKey(u => u.Id); // AppUser'ın anahtarını Guid olarak belirt
+            builder.HasMany(u => u.Reviews) // Bir AppUser'ın birden çok Review'i olabilir
+                   .WithOne(r => r.AppUser) // Bir Review'ın bir AppUser'a ait olması gerekiyor
+                   .HasForeignKey(r => r.AppUserId) // Foreign key'i AppUserId olarak belirt (int türünde)
+                   .IsRequired(); // Zorunlu ilişki olduğunu belirt
 
 
-            
+
 
             // Seed data using HasData method
             builder.HasData(SeedAppUserData());

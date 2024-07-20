@@ -8,8 +8,8 @@ namespace HotCatCafe.Model.Enums
 {
     public enum DataStatus
     {
-        INSERTED,       //Eklendi
-        CREATED,        //Oluşturuldu
-        DELETED         //Silindi
+        Inserted,       //Eklendi
+        Deleted,         //Silindi
+        Updated         //Güncellendi
     }
 }
