@@ -1,4 +1,4 @@
-using HotCatCafe.MVC.Models;
+﻿using HotCatCafe.MVC.Models;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 
@@ -28,5 +28,6 @@ namespace HotCatCafe.MVC.Controllers
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
+        
     }
 }

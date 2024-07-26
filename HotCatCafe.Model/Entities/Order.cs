@@ -15,7 +15,7 @@ namespace HotCatCafe.Model.Entities
         //public Guid? AppUserId { get; set; }
         //public virtual AppUser AppUser { get; set; } // Müşteriye ait bilgiler
 
-        //public virtual List<OrderDetail> OrderDetails { get; set; } // Sipariş detayları
+        public virtual List<OrderDetail> OrderDetails { get; set; } // Sipariş detayları
         //public virtual List<Payment> Payments { get; set; } // Ödemeler
         //public int? DiscountId { get; set; }
         //public virtual Discount Discount { get; set; } // Siparişe uygulanan indirim

@@ -7,14 +7,12 @@ namespace HotCatCafe.Model.Entities
     {
         public string ProductName { get; set; }
         public decimal Price { get; set; }
-        public short Stock { get; set; }  //stoktaki ürün miktarı
+        public short Stock { get; set; }  //stoktaki ürün miktarı-----UnitsInstock yapabilirim
         public string ImagePath { get; set; }   //Burada biz doğrudan görseli değil görselin yolunu vermiş olacağız.
         public double Discount { get; set; }  //indirim oranı-yüzdesini ondalıklı olarak alınacağından dolayı double tip kullanıldı.
         public bool IsDiscontinued { get; set; }
-        public ProductStatus Status { get; set; }
         public DateTime? Discontinued { get; set; }  // Ürünün satışı durdurulma tarihi (opsiyonel)
-        public ProductStatus ProductStatus { get; set; }//instock outofstok --iş mantığı kuralları için -kod bakımı anlaşılabilirlik için tanımlandı
-        public DataSize DataSize { get; set; }// ürün boyutu--Kodun okunabilirliği için
+        public DataSize DataSize { get; set; }// ürün boyutu--Kodun okunabilirliği için----Size olarak değiştirebilirim
 
         //Mapping
         //Bir ürünün 1 categorisi olabilir.

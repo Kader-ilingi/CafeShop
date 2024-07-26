@@ -11,11 +11,11 @@ namespace HotCatCafe.BLL.Repositories.Abstracts.BaseAbstract
 
         Category GetCategoryById(int id);//id ile kategory çağırmamızı sağlayacaktır
 
-        IEnumerable<Category> GetActivesCategories();
-        IEnumerable<Category> GetPassivesCategories();
-        Task<string> CreateCategoryAsync(Category category);//kullanıcı istekleri async olarak tanımlandı
-        Task<string> UpdateCategoryAsync(Category category);
-        Task<string> DeleteCategoryAsync(Category category);
+        IEnumerable<Category> GetActiveCategories();
+        IEnumerable<Category> GetPassiveCategories();
+        Task<string> CreateCategory(Category category);//kullanıcı istekleri async olarak tanımlandı
+        Task<string> UpdateCategory(Category category);
+        Task<string> DeleteCategory(Category category);
 
 
 

@@ -4,6 +4,7 @@ using HotCatCafe.Model.BaseEntities;
 using HotCatCafe.Model.Enums;
 using Microsoft.EntityFrameworkCore;
 using System.Net.Sockets;
+using System.Reflection;
 
 namespace HotCatCafe.BLL.Repositories.Concretes.BaseService
 {
@@ -43,6 +44,7 @@ namespace HotCatCafe.BLL.Repositories.Concretes.BaseService
 
         public async Task<string> Delete(T entity)
         {
+
             if (entity == null)
             {
                 throw new ArgumentNullException(nameof(entity), "Entity cannot be null");
@@ -50,15 +52,18 @@ namespace HotCatCafe.BLL.Repositories.Concretes.BaseService
             }
             try
             {
-                entity.IsActive = false;
-                entity.UpdatedDate = DateTime.UtcNow;//evrensel koordinatlı zaman (UTC) olarak alır
-                entity.CreatedComputerName = Environment.MachineName;
-                entity.UpdatedIpAddress = AddressFamily.InterNetwork.ToString();
+                //todo: numu araştır
+                PropertyInfo isActiveProp = entity.GetType().GetProperty("IsActive");
+                if (isActiveProp != null && isActiveProp.PropertyType == typeof(bool))
+                {
+                    isActiveProp.SetValue(entity, false);
+                }
+
+                // Assuming DataStatus.Deleted is an enum value you set for marking as deleted
                 entity.Status = DataStatus.Deleted;
 
-                _context.Entry(entity).State = EntityState.Modified;
+                Update(entity);
 
-                await _context.SaveChangesAsync();
                 return "Entity deleted successfully";
             }
             catch (Exception ex)
@@ -70,35 +75,41 @@ namespace HotCatCafe.BLL.Repositories.Concretes.BaseService
         public async Task<string> Update(T entity)
         {
             string result = " ";
-            switch (entity.Status)
+            try
             {
-                case DataStatus.Deleted:
-                    entity.Status = DataStatus.Deleted;
+                switch (entity.Status)
+                {
+                    case Model.Enums.DataStatus.Deleted:
+                        entity.Status = DataStatus.Deleted;
 
-                    _context.Entry(entity).State = EntityState.Modified;//EntityFramework ile birlikte bize sunulan Entry() metot paramaternin değerlerini veritabanındaki değerler ile otomatik olarak karşılaştırır eğer değişiklik görürse o değişikliği kendisi otomatik gerçekleştirir.
+                        //_context.Entry(entity).State = EntityState.Modified;//EntityFramework ile birlikte bize sunulan Entry() metot paramaternin değerlerini veritabanındaki değerler ile otomatik olarak karşılaştırır eğer değişiklik görürse o değişikliği kendisi otomatik gerçekleştirir.
 
-                    await _context.SaveChangesAsync();//değişiklikler veri tabanına kayıt edilir
-                    result = "Data updated";
+                        //await _context.SaveChangesAsync();//değişiklikler veri tabanına kayıt edilir
+                        result = "Data deleted";
 
-                    break;
+                        break;
 
-                case DataStatus.Inserted:
-                    entity.Status = DataStatus.Inserted;
+                    case DataStatus.Updated:
+                        entity.Status = DataStatus.Updated;
 
-                    _context.Entry(entity).State = EntityState.Modified;
+                        result = "Data updated";
+                        break;
 
-                    await _context.SaveChangesAsync();
-                    result = "Data updated";
+                    case Model.Enums.DataStatus.Inserted:
+                        entity.Status = DataStatus.Updated;
+                        result = "Data inserted";
 
-                    break;
-                case DataStatus.Updated:
-                    entity.Status = DataStatus.Updated;
-                    _context.Entry(entity).State = EntityState.Modified;
+                        break;
+                    
+                }
+                _context.Entry(entity).State = EntityState.Modified;
 
-                    await _context.SaveChangesAsync();
+                await _context.SaveChangesAsync();
+            }
+            catch (Exception ex)
+            {
 
-                    result = "Data updated";
-                    break;
+                return $"Error occured while updating enttiy:{ex.Message}";
             }
             return result;
         }

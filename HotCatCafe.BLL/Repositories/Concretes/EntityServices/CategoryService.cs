@@ -13,7 +13,7 @@ namespace HotCatCafe.BLL.Repositories.Concretes.EntityServices
         {
             _categoryRepository = categoryRepository;
         }
-        public async Task<string> CreateCategoryAsync(Category category)
+        public async Task<string> CreateCategory(Category category)
         {
             try
             {
@@ -27,7 +27,7 @@ namespace HotCatCafe.BLL.Repositories.Concretes.EntityServices
 
         }
 
-        public async Task<string> DeleteCategoryAsync(Category category)
+        public async Task<string> DeleteCategory(Category category)
         {
             try
             {
@@ -40,7 +40,7 @@ namespace HotCatCafe.BLL.Repositories.Concretes.EntityServices
             }
         }
 
-        public IEnumerable<Category> GetActivesCategories()
+        public IEnumerable<Category> GetActiveCategories()
         {
             return _categoryRepository.GetActives();
         }
@@ -52,20 +52,17 @@ namespace HotCatCafe.BLL.Repositories.Concretes.EntityServices
 
         public Category GetCategoryById(int id)
         {
-            var category = _categoryRepository.GetById(id);
-            if (category == null)
-            {
-                throw new Exception("Category not found");
-            }
-            return category;
+            return _categoryRepository.GetById(id);
+           
+            
         }
 
-        public IEnumerable<Category> GetPassivesCategories()
+        public IEnumerable<Category> GetPassiveCategories()
         {
             return _categoryRepository.GetPassives();
         }
 
-        public async Task<string> UpdateCategoryAsync(Category category)
+        public async Task<string> UpdateCategory(Category category)
         {
             try
             {

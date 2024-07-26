@@ -17,13 +17,13 @@ namespace HotCatCafe.DAL.Configurations
             builder.Property(od => od.Discount)
             .HasColumnType("float"); // Discount alanı için veri tipi belirlendi
 
-            //// OrderDetail ile Order arasında 1-N ilişkisi
-            //builder.HasOne(od => od.Order)
-            //    .WithMany(o => o.OrderDetails)
-            //    .HasForeignKey(od => od.OrderId)
-            //    .OnDelete(DeleteBehavior.Cascade); // Cascade ile Order silindiğinde OrderDetail'lar da silinir
+            // OrderDetail ile Order arasında 1-N ilişkisi
+            builder.HasOne(od => od.Order)
+                .WithMany(o => o.OrderDetails)
+                .HasForeignKey(od => od.OrderId)
+                .OnDelete(DeleteBehavior.Cascade); // Cascade ile Order silindiğinde OrderDetail'lar da silinir
 
-            // OrderDetail ile Product arasında 1-N ilişkisi
+            //OrderDetail ile Product arasında 1 - N ilişkisi
             builder.HasOne(od => od.Product)
                 .WithMany()
                 .HasForeignKey(od => od.ProductId)

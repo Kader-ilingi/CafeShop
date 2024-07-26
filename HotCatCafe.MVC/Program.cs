@@ -20,6 +20,8 @@ builder.Services.AddScoped(typeof(IStorageService<>), typeof(StorageService<>));
 //Entity services
 builder.Services.AddScoped<ICategoryRepository, CategoryService>();
 
+builder.Services.AddScoped<IProductRepository, ProductService>();
+
 
 
 
@@ -44,14 +46,15 @@ app.UseAuthorization();
 app.UseEndpoints(endpoints =>
 {
     endpoints.MapControllerRoute(
+      name: "areas",
+      pattern: "{area:exists}/{controller=Home}/{action=Index}/{id?}"
+    );
+    endpoints.MapControllerRoute(
      name: "default",
      pattern: "{controller=Home}/{action=Index}/{id?}"
    );
 
-    endpoints.MapControllerRoute(
-      name: "areas",
-      pattern: "{area:exists}/{controller=Home}/{action=Index}/{id?}"
-    );
+    
 });
 
 

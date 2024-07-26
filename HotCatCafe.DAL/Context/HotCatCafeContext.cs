@@ -44,7 +44,7 @@ namespace HotCatCafe.DAL.Context
             //AppUserConfiguration
             builder.ApplyConfiguration(new AppUserConfiguration());
             builder.ApplyConfiguration(new OrderConfiguration());
-            //builder.ApplyConfiguration(new OrderDetailConfiguration());
+            builder.ApplyConfiguration(new OrderDetailConfiguration());
             //builder.ApplyConfiguration(new PaymentConfiguration());
             //builder.ApplyConfiguration(new  ReviewConfiguration());
             //builder.ApplyConfiguration(new DiscountConfiguration());

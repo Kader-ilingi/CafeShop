@@ -1,0 +1,89 @@
+﻿@model HotCatCafe.BLL.ViewModels.ProductViewModel
+@{
+    ViewData["Title"] = "Create";
+    Layout = "~/Areas/ManagementPanel/Views/Shared/_ManagementPanelLayout.cshtml";
+}
+
+<h1>Yeni Ürün Ekle</h1>
+<form method="post" enctype="multipart/form-data">
+    <div>
+        <label asp-for="ProductName"></label>
+        <input class="form-control" type="text" asp-for="ProductName" />
+    </div>
+    <div>
+        <label asp-for="UnitPrice"></label>
+        <input class="form-control" type="number" asp-for="UnitPrice" />
+    </div>
+    <div>
+        <label asp-for="UnitsInStock"></label>
+        <input class="form-control" type="number" asp-for="UnitsInStock" />
+    </div>
+    <div>
+        <!--Burada bir select list oluşturularak bütün kategoriler listelenecek.-->
+        <select class="form-control" asp-items="@ViewBag.CategoryListItem" asp-for="CategoryId">
+            <option selected="" disabled>Select Category</option>
+        </select>
+
+
+    </div>
+
+    <div>
+        <input class="form-control" type="file" name="productImage" />
+    </div>
+
+    <button class="btn btn-success" type="submit">Oluştur</button>
+</form>
+@* <form asp-action="Create" asp-controller="Product" method="post" enctype="multipart/form-data">
+    <div class="form-group">
+        <label asp-for="ProductName">Ürün Adı</label>
+        <input asp-for="ProductName" class="form-control" />
+        <span asp-validation-for="ProductName" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="UnitPrice">Fiyat</label>
+        <input asp-for="UnitPrice" class="form-control" />
+        <span asp-validation-for="UnitPrice" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="UnitsInStock">Stok</label>
+        <input asp-for="UnitsInStock" class="form-control" />
+        <span asp-validation-for="UnitsInStock" class="text-danger"></span>
+    </div>
+    <div>
+        <label for="Category">Categori Seç</label>
+        <!--Burada bir select list oluşturularak bütün kategoriler listelenecek.-->
+        <select class="form-control" asp-items="@ViewBag.CategoryListItem" asp-for="CategoryId">
+            <option selected="" disabled>Select Category</option>
+        </select>
+
+
+    </div>
+
+    <div class="form-group">
+        <div>
+            <label asp-for="ImagePath">Ürün Resmi Seç</label>
+            <input asp-for="ImagePath" class="form-control-file" type="file" name="imageFile" />
+            <span asp-validation-for="ImagePath" class="text-danger"></span>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Status">Durum</label>
+        <select asp-for="Status" class="form-control">
+            <option value="0">Inserted</option>
+            <option value="1">Updated</option>
+            <option value="2">Deleted</option>
+        </select>
+        <span asp-validation-for="Status" class="text-danger"></span>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Kaydet</button>
+</form> *@
+
+@* @section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+} *@

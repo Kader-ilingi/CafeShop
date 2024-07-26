@@ -7,18 +7,18 @@ namespace HotCatCafe.BLL.Repositories.Concretes.EntityServices
 {
     public class ProductService : IProductRepository
     {
-        private readonly IStorageService<Product> _storageService;
+        private readonly IStorageService<Product> _productStorageService;
 
-        public ProductService(IStorageService<Product> storageService)
+        public ProductService(IStorageService<Product> productStorageService)
         {
-            _storageService = storageService;
+            _productStorageService = productStorageService;
         }
         public async Task<string> CreateProductAsync(Product product)
         {
            
             try
             {
-                return await _storageService.Create(product);//ıstorageservice'teki create ile oluşturmamıza olanak sağlıyor.
+                return await _productStorageService.Create(product);//ıstorageservice'teki create ile oluşturmamıza olanak sağlıyor.
             }
             catch (Exception ex)
             {
@@ -31,7 +31,7 @@ namespace HotCatCafe.BLL.Repositories.Concretes.EntityServices
         {
             try
             {
-                return await _storageService.Delete(product);
+                return await _productStorageService.Delete(product);
             }
             catch (Exception ex)
             {
@@ -42,27 +42,33 @@ namespace HotCatCafe.BLL.Repositories.Concretes.EntityServices
 
         public IEnumerable<Product> GetActiveProducts()
         {
-            return _storageService.GetActives();
+            return _productStorageService.GetActives();
         }
 
-        public IEnumerable<Product> GetAllProducts()
+        public List<Product> GetAllProducts()
         {
-            return _storageService.GetPassives();
+            return  _productStorageService.GetAll().ToList();
         }
 
         public IEnumerable<Product> GetDiscontinuedProducts()
         {
-            return _storageService.GetAll().Where(x=>x.IsDiscontinued).ToList();
+            return _productStorageService.GetAll().Where(x=>x.IsDiscontinued).ToList();
         }
 
         public IEnumerable<Product> GetInactiveProducts()
         {
-            return _storageService.GetAll().Where(x=>!x.IsActive || x.IsDiscontinued).ToList();
+            return _productStorageService.GetAll().Where(x=>!x.IsActive || x.IsDiscontinued).ToList();
+        }
+
+        public List<Product> GetProductByCategoryId(int categoryId)
+        {
+            return _productStorageService.GetAll().Where(x => x.CategoryId == categoryId).ToList();
+
         }
 
         public  Product GetProductById(int id)
         {
-            var product=_storageService.GetById(id);
+            var product= _productStorageService.GetById(id);
             if(product == null)
             {
                 throw new Exception($"Product with id {id} not found.");
@@ -70,27 +76,27 @@ namespace HotCatCafe.BLL.Repositories.Concretes.EntityServices
             return product;
         }
 
-        public IEnumerable<Product> GetProductsByStatus(ProductStatus status)
+        public IEnumerable<Product> GetProductsByStatus(DataStatus status)
         {
-            return _storageService.GetAll().Where(x=>x.Status == status);
+            return _productStorageService.GetAll().Where(x=>x.Status == status).ToList();
         }
 
         public  IEnumerable<Product> GetProductsInStock()
         {
             //Bu metot, stokta olan ve aktif durumda (IsActive == true) olan ürünleri getirecek.
-            return _storageService.GetAll().Where(x=>x.Stock>0 && x.IsActive).ToList();
+            return _productStorageService.GetAll().Where(x=>x.Stock>0 && x.IsActive).ToList();
         }
 
         public IEnumerable<Product> GetProductsOutOfStock()
         {
-            return _storageService.GetAll().Where(x=>x.Stock==0).ToList();//stok'u sıfırlanan ürünleri getirecektir
+            return _productStorageService.GetAll().Where(x=>x.Stock==0).ToList();//stok'u sıfırlanan ürünleri getirecektir
         }
 
         public async Task<string> UpdateProductAsync(Product product)
         {
             try
             {
-                return await _storageService.Update(product);
+                return await _productStorageService.Update(product);
             }
             catch (Exception ex)
             {
@@ -99,19 +105,24 @@ namespace HotCatCafe.BLL.Repositories.Concretes.EntityServices
             }  
         }
 
-        public async Task<string> UpdateProductStatusById(int productId, ProductStatus newStatus)
+        public async Task<string> UpdateProductStatusById(int productId, DataStatus newStatus)
         {
-            var product=_storageService.GetById(productId);
-            if(product != null)
+            var product = _productStorageService.GetById(productId);
+            if (product != null)
             {
                 product.Status = newStatus;
-                await _storageService.Update(product);
+                await _productStorageService.Update(product);
                 return "ProductStatus updated";
             }
             else
             {
                 return $"Error updating ProductStatus";
             }
+        }
+
+        List<Product> IProductRepository.GetProductsByStatus(DataStatus status)
+        {
+            throw new NotImplementedException();
         }
     }
 }
