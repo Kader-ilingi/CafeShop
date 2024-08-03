@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace HotCatCafe.DAL.Migrations
 {
     [DbContext(typeof(HotCatCafeContext))]
-    [Migration("20240720150303_initial-1")]
-    partial class initial1
+    [Migration("20240802133609_initial")]
+    partial class initial
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -102,275 +102,275 @@ namespace HotCatCafe.DAL.Migrations
                     b.HasData(
                         new
                         {
-                            Id = new Guid("bc8c5788-f9ea-091c-f5f6-b5128dda81d1"),
+                            Id = new Guid("5cd9ab24-14ef-30c0-a18d-c29caf83ab01"),
                             AccessFailedCount = 0,
-                            Address = "0225 Taurean Underpass, New Rollin, Virgin Islands, U.S.",
-                            BirthDate = new DateTime(2003, 6, 17, 9, 20, 21, 171, DateTimeKind.Local).AddTicks(7375),
-                            ConcurrencyStamp = "78e736b9-32c1-4bd7-a526-5613b1906a04",
-                            Email = "ısai.dare_mayert@gmail.com",
+                            Address = "4109 Fiona Drive, Bergstromstad, Belize",
+                            BirthDate = new DateTime(1979, 3, 12, 15, 49, 19, 953, DateTimeKind.Local).AddTicks(7659),
+                            ConcurrencyStamp = "9398fcad-35f1-45c2-a514-57a6fb43e154",
+                            Email = "gunnar192@yahoo.com",
                             EmailConfirmed = false,
                             Gender = 0,
                             LockoutEnabled = false,
-                            PasswordHash = "lgmxhYyE",
-                            PhoneNumber = "(719) 614-6625",
+                            PasswordHash = "u5PtYS6s",
+                            PhoneNumber = "(360) 203-5596 x08032",
                             PhoneNumberConfirmed = false,
                             TwoFactorEnabled = false,
-                            UserName = "Leann.Larson"
+                            UserName = "Payton_Metz16"
                         },
                         new
                         {
-                            Id = new Guid("23f2811f-a80e-c428-f0ce-f34b98e61483"),
+                            Id = new Guid("6f195fc3-0fb3-7234-1071-13718484c042"),
                             AccessFailedCount = 0,
-                            Address = "05924 Destini Locks, Harveyton, Egypt",
-                            BirthDate = new DateTime(2003, 4, 6, 11, 58, 22, 439, DateTimeKind.Local).AddTicks(7276),
-                            ConcurrencyStamp = "f4551e45-3fce-4205-9f71-49d27ae9f723",
-                            Email = "maida.lehner86@hotmail.com",
+                            Address = "5558 Kulas Lights, New Joelleberg, Serbia",
+                            BirthDate = new DateTime(1995, 4, 5, 5, 0, 54, 170, DateTimeKind.Local).AddTicks(9478),
+                            ConcurrencyStamp = "ceaa40a8-158d-4627-8329-0b9ed2eb572e",
+                            Email = "rickie.cruickshank96_welch35@hotmail.com",
                             EmailConfirmed = false,
                             Gender = 2,
                             LockoutEnabled = false,
-                            PasswordHash = "pmgUoTh9",
-                            PhoneNumber = "1-264-877-5870 x6299",
+                            PasswordHash = "eFGCUPHw",
+                            PhoneNumber = "468-219-3758 x966",
                             PhoneNumberConfirmed = false,
                             TwoFactorEnabled = false,
-                            UserName = "Cheyanne_Leuschke36"
+                            UserName = "Vesta_Mueller"
                         },
                         new
                         {
-                            Id = new Guid("ee38c13e-9634-02df-0e7f-214e65fa0287"),
+                            Id = new Guid("d183a5ce-ab17-b85c-56d7-12cacc56a65f"),
                             AccessFailedCount = 0,
-                            Address = "645 Mertz Burg, Cartwrightshire, Denmark",
-                            BirthDate = new DateTime(1988, 8, 20, 3, 19, 52, 442, DateTimeKind.Local).AddTicks(179),
-                            ConcurrencyStamp = "45143dbc-3fad-4f62-af0c-dec02baf89fd",
-                            Email = "frankie.mraz.rau@yahoo.com",
+                            Address = "8472 Walter Roads, Reillymouth, Moldova",
+                            BirthDate = new DateTime(1981, 7, 6, 3, 32, 27, 372, DateTimeKind.Local).AddTicks(9769),
+                            ConcurrencyStamp = "8c164900-98b0-4505-a61d-1ad96537381a",
+                            Email = "marjorie5585@hotmail.com",
+                            EmailConfirmed = false,
+                            Gender = 1,
+                            LockoutEnabled = false,
+                            PasswordHash = "Ca0UWvf8",
+                            PhoneNumber = "385.906.2044",
+                            PhoneNumberConfirmed = false,
+                            TwoFactorEnabled = false,
+                            UserName = "Dallin26"
+                        },
+                        new
+                        {
+                            Id = new Guid("748c12ba-a589-37a0-6570-c917347aa047"),
+                            AccessFailedCount = 0,
+                            Address = "578 Aurore Port, Osinskishire, French Guiana",
+                            BirthDate = new DateTime(1984, 3, 12, 10, 35, 30, 489, DateTimeKind.Local).AddTicks(5897),
+                            ConcurrencyStamp = "0fc862d7-449d-46a2-a47d-be017742a0bf",
+                            Email = "johnny_prosacco30.boehm25@hotmail.com",
                             EmailConfirmed = false,
                             Gender = 2,
                             LockoutEnabled = false,
-                            PasswordHash = "dh0Xvxfk",
-                            PhoneNumber = "547-817-9244 x025",
+                            PasswordHash = "yg8MVUUg",
+                            PhoneNumber = "(496) 556-8497 x521",
                             PhoneNumberConfirmed = false,
                             TwoFactorEnabled = false,
-                            UserName = "Lavon.Glover"
+                            UserName = "Arielle21"
                         },
                         new
                         {
-                            Id = new Guid("84f3c1f7-28e4-0f6a-4ec8-c53bc9e38f33"),
+                            Id = new Guid("976a148f-f8e0-3a10-889b-e13887e89a9a"),
                             AccessFailedCount = 0,
-                            Address = "7247 Celine Key, Grahammouth, Uruguay",
-                            BirthDate = new DateTime(2005, 3, 15, 9, 46, 14, 706, DateTimeKind.Local).AddTicks(595),
-                            ConcurrencyStamp = "039ed134-a7a6-4bc5-b39d-55457d8ce5ab",
-                            Email = "pablo67.bins34@yahoo.com",
+                            Address = "463 Dickinson Streets, Alexandraport, Guyana",
+                            BirthDate = new DateTime(1990, 7, 27, 3, 3, 3, 702, DateTimeKind.Local).AddTicks(2183),
+                            ConcurrencyStamp = "f77f3993-1d18-45b3-88d0-e0a99beeba7f",
+                            Email = "tierra.schaefer.swift61@yahoo.com",
+                            EmailConfirmed = false,
+                            Gender = 1,
+                            LockoutEnabled = false,
+                            PasswordHash = "gpRsjH7D",
+                            PhoneNumber = "320.796.5016 x563",
+                            PhoneNumberConfirmed = false,
+                            TwoFactorEnabled = false,
+                            UserName = "Joelle.Corwin"
+                        },
+                        new
+                        {
+                            Id = new Guid("af628ae5-a9b6-756a-50de-0d3133428a90"),
+                            AccessFailedCount = 0,
+                            Address = "18420 Lenny Field, Lake Toyberg, Republic of Korea",
+                            BirthDate = new DateTime(2003, 7, 16, 4, 18, 33, 314, DateTimeKind.Local).AddTicks(6630),
+                            ConcurrencyStamp = "2ba47660-62fc-4bed-b299-113fd6c1d575",
+                            Email = "ısaias_yost94@gmail.com",
+                            EmailConfirmed = false,
+                            Gender = 2,
+                            LockoutEnabled = false,
+                            PasswordHash = "XszhXZAq",
+                            PhoneNumber = "974-365-1365 x521",
+                            PhoneNumberConfirmed = false,
+                            TwoFactorEnabled = false,
+                            UserName = "Zella.Leffler41"
+                        },
+                        new
+                        {
+                            Id = new Guid("86194ab9-19e1-5d85-81a0-d7dbb9179934"),
+                            AccessFailedCount = 0,
+                            Address = "5190 Murazik Knolls, Port Madyson, Malta",
+                            BirthDate = new DateTime(2002, 6, 19, 9, 3, 33, 873, DateTimeKind.Local).AddTicks(6445),
+                            ConcurrencyStamp = "60c906aa-9fd4-4db7-bd6b-48c3a0761585",
+                            Email = "ısmael_runolfsson19@yahoo.com",
+                            EmailConfirmed = false,
+                            Gender = 2,
+                            LockoutEnabled = false,
+                            PasswordHash = "2XbAc_vH",
+                            PhoneNumber = "1-417-654-0503 x51056",
+                            PhoneNumberConfirmed = false,
+                            TwoFactorEnabled = false,
+                            UserName = "Morton_Hauck65"
+                        },
+                        new
+                        {
+                            Id = new Guid("6b1cada8-49cf-92a6-1562-bdae6627bc77"),
+                            AccessFailedCount = 0,
+                            Address = "22728 Powlowski Lock, Harveyport, Belarus",
+                            BirthDate = new DateTime(1990, 1, 1, 12, 21, 35, 748, DateTimeKind.Local).AddTicks(2422),
+                            ConcurrencyStamp = "0784e627-2ee3-4e7a-a008-10ec380d6f62",
+                            Email = "ıva.casper62@gmail.com",
+                            EmailConfirmed = false,
+                            Gender = 2,
+                            LockoutEnabled = false,
+                            PasswordHash = "X8YAKGbb",
+                            PhoneNumber = "1-510-723-1505",
+                            PhoneNumberConfirmed = false,
+                            TwoFactorEnabled = false,
+                            UserName = "Claudine.Hilll52"
+                        },
+                        new
+                        {
+                            Id = new Guid("703d1c77-273d-4026-26ce-0166120333b5"),
+                            AccessFailedCount = 0,
+                            Address = "3427 Fisher Place, Lindseyview, Madagascar",
+                            BirthDate = new DateTime(2002, 12, 19, 8, 37, 14, 52, DateTimeKind.Local).AddTicks(6028),
+                            ConcurrencyStamp = "3f89e72b-bda5-4a53-96b0-3a3acbb5101b",
+                            Email = "sydnee.bartoletti90.aufderhar12@gmail.com",
                             EmailConfirmed = false,
                             Gender = 0,
                             LockoutEnabled = false,
-                            PasswordHash = "S4M7K8Ua",
-                            PhoneNumber = "1-742-406-0353 x79372",
+                            PasswordHash = "1SjNcIwH",
+                            PhoneNumber = "289-506-8046",
                             PhoneNumberConfirmed = false,
                             TwoFactorEnabled = false,
-                            UserName = "Adrain.Mohr35"
+                            UserName = "Etha.Murazik"
                         },
                         new
                         {
-                            Id = new Guid("be02e853-4ab8-8c73-8cca-64cd2971a265"),
+                            Id = new Guid("02235ab6-faa5-7486-0986-9dce3d5e8edc"),
                             AccessFailedCount = 0,
-                            Address = "605 Cornell Lodge, New Roosevelt, United Arab Emirates",
-                            BirthDate = new DateTime(1978, 8, 5, 20, 32, 41, 509, DateTimeKind.Local).AddTicks(7860),
-                            ConcurrencyStamp = "05acb753-e79c-48cb-9e84-74e04ec8af43",
-                            Email = "sophia3_koelpin69@yahoo.com",
+                            Address = "708 Zena Bypass, New Stacy, Malaysia",
+                            BirthDate = new DateTime(2004, 12, 21, 2, 42, 12, 995, DateTimeKind.Local).AddTicks(9401),
+                            ConcurrencyStamp = "9fa2742b-17ee-47c7-be77-02e198c7da89",
+                            Email = "virgie69_harber68@yahoo.com",
+                            EmailConfirmed = false,
+                            Gender = 2,
+                            LockoutEnabled = false,
+                            PasswordHash = "dG606uU9",
+                            PhoneNumber = "579.561.3729 x773",
+                            PhoneNumberConfirmed = false,
+                            TwoFactorEnabled = false,
+                            UserName = "Maya.Graham"
+                        },
+                        new
+                        {
+                            Id = new Guid("0b606032-a3aa-3c97-011a-60ce9e42cac4"),
+                            AccessFailedCount = 0,
+                            Address = "91900 Tyler Shoal, South Lonzo, Central African Republic",
+                            BirthDate = new DateTime(2006, 5, 22, 5, 50, 31, 97, DateTimeKind.Local).AddTicks(9348),
+                            ConcurrencyStamp = "6a1d961a-c74f-42ed-b9ad-136cf383459b",
+                            Email = "titus_hoppe94.schowalter93@yahoo.com",
+                            EmailConfirmed = false,
+                            Gender = 1,
+                            LockoutEnabled = false,
+                            PasswordHash = "PvL9XMUf",
+                            PhoneNumber = "1-345-525-7432 x6688",
+                            PhoneNumberConfirmed = false,
+                            TwoFactorEnabled = false,
+                            UserName = "Hobart_Schuppe"
+                        },
+                        new
+                        {
+                            Id = new Guid("6093ca50-3e68-0ea0-93e4-c7a7eb94e93a"),
+                            AccessFailedCount = 0,
+                            Address = "4617 Goyette Fords, South Jennifer, Honduras",
+                            BirthDate = new DateTime(1981, 9, 17, 20, 6, 39, 630, DateTimeKind.Local).AddTicks(9974),
+                            ConcurrencyStamp = "587f911d-fcda-4627-bd8f-7551bf8a519a",
+                            Email = "tommie80_hermiston@yahoo.com",
+                            EmailConfirmed = false,
+                            Gender = 1,
+                            LockoutEnabled = false,
+                            PasswordHash = "RRGmQqpB",
+                            PhoneNumber = "916.893.1039 x4108",
+                            PhoneNumberConfirmed = false,
+                            TwoFactorEnabled = false,
+                            UserName = "Cathrine19"
+                        },
+                        new
+                        {
+                            Id = new Guid("58b49fed-8372-f476-401f-52a0c5bf51bc"),
+                            AccessFailedCount = 0,
+                            Address = "426 Tyra Land, Rosendoborough, Uganda",
+                            BirthDate = new DateTime(1995, 4, 6, 17, 45, 36, 602, DateTimeKind.Local).AddTicks(9198),
+                            ConcurrencyStamp = "f81a67c0-843a-45ff-94bd-2226aa430be1",
+                            Email = "kiara_howell2539@yahoo.com",
+                            EmailConfirmed = false,
+                            Gender = 1,
+                            LockoutEnabled = false,
+                            PasswordHash = "f5HwMu8S",
+                            PhoneNumber = "334.685.1007",
+                            PhoneNumberConfirmed = false,
+                            TwoFactorEnabled = false,
+                            UserName = "Gussie_Corwin"
+                        },
+                        new
+                        {
+                            Id = new Guid("ce64f326-4772-57fc-30a5-7f9df98fb50b"),
+                            AccessFailedCount = 0,
+                            Address = "9275 Keyon Brook, West Aurelio, Reunion",
+                            BirthDate = new DateTime(2004, 11, 7, 17, 33, 14, 436, DateTimeKind.Local).AddTicks(8251),
+                            ConcurrencyStamp = "587a071f-934d-4416-88c9-40b0bd252c93",
+                            Email = "monserrat66.stehr@yahoo.com",
+                            EmailConfirmed = false,
+                            Gender = 1,
+                            LockoutEnabled = false,
+                            PasswordHash = "Mcd3tsXW",
+                            PhoneNumber = "909-300-0905 x43506",
+                            PhoneNumberConfirmed = false,
+                            TwoFactorEnabled = false,
+                            UserName = "Kyle_Sawayn"
+                        },
+                        new
+                        {
+                            Id = new Guid("79a0fb10-dd26-e7d8-3318-0ed281e569f1"),
+                            AccessFailedCount = 0,
+                            Address = "58034 Tillman Corners, Lake Alleneberg, Cote d'Ivoire",
+                            BirthDate = new DateTime(1997, 5, 15, 6, 52, 40, 922, DateTimeKind.Local).AddTicks(7833),
+                            ConcurrencyStamp = "bc996e26-5721-49bb-93c6-5f3753ab6ba3",
+                            Email = "baby_parisian52.mitchell@gmail.com",
+                            EmailConfirmed = false,
+                            Gender = 1,
+                            LockoutEnabled = false,
+                            PasswordHash = "1qXDNvq6",
+                            PhoneNumber = "(791) 433-0090 x66056",
+                            PhoneNumberConfirmed = false,
+                            TwoFactorEnabled = false,
+                            UserName = "Morton13"
+                        },
+                        new
+                        {
+                            Id = new Guid("4aaefad9-2458-e80b-b20f-03f471b47e94"),
+                            AccessFailedCount = 0,
+                            Address = "7226 Fay Causeway, Lake Kyla, Senegal",
+                            BirthDate = new DateTime(1988, 5, 17, 7, 3, 59, 515, DateTimeKind.Local).AddTicks(862),
+                            ConcurrencyStamp = "a78b2dc7-a630-4bdd-b992-735581b242bd",
+                            Email = "camden22.goodwin@gmail.com",
                             EmailConfirmed = false,
                             Gender = 0,
                             LockoutEnabled = false,
-                            PasswordHash = "E5EePzeD",
-                            PhoneNumber = "1-405-796-9276 x27269",
+                            PasswordHash = "bnzZ4Fi3",
+                            PhoneNumber = "896-682-8362 x925",
                             PhoneNumberConfirmed = false,
                             TwoFactorEnabled = false,
-                            UserName = "Rusty77"
-                        },
-                        new
-                        {
-                            Id = new Guid("34113781-91fa-c2d2-9454-85b7296d42bf"),
-                            AccessFailedCount = 0,
-                            Address = "27924 Juvenal Causeway, Schneiderview, Bolivia",
-                            BirthDate = new DateTime(1980, 8, 5, 10, 20, 3, 497, DateTimeKind.Local).AddTicks(3471),
-                            ConcurrencyStamp = "e47b9f26-2376-4001-8d6c-5c23178eb3e3",
-                            Email = "don8390@hotmail.com",
-                            EmailConfirmed = false,
-                            Gender = 1,
-                            LockoutEnabled = false,
-                            PasswordHash = "_kKmirBJ",
-                            PhoneNumber = "515.975.9695",
-                            PhoneNumberConfirmed = false,
-                            TwoFactorEnabled = false,
-                            UserName = "Wilburn58"
-                        },
-                        new
-                        {
-                            Id = new Guid("f331a2c8-3751-8369-870b-aed2174c945e"),
-                            AccessFailedCount = 0,
-                            Address = "428 Kozey Fort, Sporerberg, Netherlands Antilles",
-                            BirthDate = new DateTime(1985, 11, 16, 4, 38, 3, 86, DateTimeKind.Local).AddTicks(6981),
-                            ConcurrencyStamp = "04861a8a-1d9c-4098-bf16-3fd5b6dcc3c9",
-                            Email = "pattie55_oreilly18@gmail.com",
-                            EmailConfirmed = false,
-                            Gender = 2,
-                            LockoutEnabled = false,
-                            PasswordHash = "sjHIqK2e",
-                            PhoneNumber = "1-217-492-1112",
-                            PhoneNumberConfirmed = false,
-                            TwoFactorEnabled = false,
-                            UserName = "Teagan_Armstrong9"
-                        },
-                        new
-                        {
-                            Id = new Guid("b63e89f0-2b11-b989-c704-f3989a5d5bf8"),
-                            AccessFailedCount = 0,
-                            Address = "76408 Kshlerin Squares, New Ibrahim, Guyana",
-                            BirthDate = new DateTime(1985, 9, 3, 3, 36, 6, 355, DateTimeKind.Local).AddTicks(3830),
-                            ConcurrencyStamp = "8d30eddd-3561-4a69-8ac2-abf59e8062e7",
-                            Email = "raegan22.emard@gmail.com",
-                            EmailConfirmed = false,
-                            Gender = 1,
-                            LockoutEnabled = false,
-                            PasswordHash = "CFq_ImOS",
-                            PhoneNumber = "1-427-884-8482 x86248",
-                            PhoneNumberConfirmed = false,
-                            TwoFactorEnabled = false,
-                            UserName = "Annabelle.Homenick"
-                        },
-                        new
-                        {
-                            Id = new Guid("6873295c-1b4b-3da6-aa0e-3e20280c77b5"),
-                            AccessFailedCount = 0,
-                            Address = "914 Emard Brooks, Glenstad, Turks and Caicos Islands",
-                            BirthDate = new DateTime(1998, 11, 18, 6, 39, 49, 399, DateTimeKind.Local).AddTicks(9906),
-                            ConcurrencyStamp = "66d45507-a7be-4fa5-82f8-d890f722e7d2",
-                            Email = "emelia55_reinger92@gmail.com",
-                            EmailConfirmed = false,
-                            Gender = 2,
-                            LockoutEnabled = false,
-                            PasswordHash = "a8puUH7E",
-                            PhoneNumber = "(340) 903-5123",
-                            PhoneNumberConfirmed = false,
-                            TwoFactorEnabled = false,
-                            UserName = "Kellen47"
-                        },
-                        new
-                        {
-                            Id = new Guid("0c600817-3788-77ec-e153-e8bda17676f6"),
-                            AccessFailedCount = 0,
-                            Address = "13093 Schmitt Highway, North Alyceville, Christmas Island",
-                            BirthDate = new DateTime(1981, 7, 18, 21, 51, 7, 543, DateTimeKind.Local).AddTicks(3124),
-                            ConcurrencyStamp = "bf75fa85-a6f1-465d-86bd-a032feea86c8",
-                            Email = "larissa77.anderson@gmail.com",
-                            EmailConfirmed = false,
-                            Gender = 1,
-                            LockoutEnabled = false,
-                            PasswordHash = "RvjP_14O",
-                            PhoneNumber = "601.337.4772 x8813",
-                            PhoneNumberConfirmed = false,
-                            TwoFactorEnabled = false,
-                            UserName = "Stan.Kirlin"
-                        },
-                        new
-                        {
-                            Id = new Guid("1dd2393a-d3f8-3c83-aeb4-02d6046658e3"),
-                            AccessFailedCount = 0,
-                            Address = "3702 Ike Pass, Corkeryfurt, Dominican Republic",
-                            BirthDate = new DateTime(1989, 9, 12, 2, 55, 4, 883, DateTimeKind.Local).AddTicks(8918),
-                            ConcurrencyStamp = "701d2269-f64e-4d4f-b8d5-8582ed7d04b4",
-                            Email = "jerod.hermiston4221@yahoo.com",
-                            EmailConfirmed = false,
-                            Gender = 1,
-                            LockoutEnabled = false,
-                            PasswordHash = "fC1ivnON",
-                            PhoneNumber = "1-282-538-4350",
-                            PhoneNumberConfirmed = false,
-                            TwoFactorEnabled = false,
-                            UserName = "Frankie.Goodwin"
-                        },
-                        new
-                        {
-                            Id = new Guid("0ff3a9eb-f963-9013-8b4e-1011f7104a2d"),
-                            AccessFailedCount = 0,
-                            Address = "0617 Kovacek Drives, Kuhicside, Turks and Caicos Islands",
-                            BirthDate = new DateTime(1997, 1, 27, 9, 26, 46, 327, DateTimeKind.Local).AddTicks(9913),
-                            ConcurrencyStamp = "c01089d5-9990-48b5-afc1-20ed11b4ea98",
-                            Email = "pedro.strosin9@yahoo.com",
-                            EmailConfirmed = false,
-                            Gender = 1,
-                            LockoutEnabled = false,
-                            PasswordHash = "me3hcgiO",
-                            PhoneNumber = "793-500-3756",
-                            PhoneNumberConfirmed = false,
-                            TwoFactorEnabled = false,
-                            UserName = "Hulda52"
-                        },
-                        new
-                        {
-                            Id = new Guid("b0a863f3-94d5-726f-5ee4-91e29a4ffe07"),
-                            AccessFailedCount = 0,
-                            Address = "5037 Jewel Ferry, Port Tomas, Georgia",
-                            BirthDate = new DateTime(1988, 3, 20, 3, 35, 45, 667, DateTimeKind.Local).AddTicks(5959),
-                            ConcurrencyStamp = "9d6af978-4df5-428b-8d95-7d2c718f3d70",
-                            Email = "zackery34_wehner63@gmail.com",
-                            EmailConfirmed = false,
-                            Gender = 0,
-                            LockoutEnabled = false,
-                            PasswordHash = "V6yU5Yx_",
-                            PhoneNumber = "596.897.1937 x69068",
-                            PhoneNumberConfirmed = false,
-                            TwoFactorEnabled = false,
-                            UserName = "Reece81"
-                        },
-                        new
-                        {
-                            Id = new Guid("c1085048-07b9-005e-7d7a-2f52be5aa836"),
-                            AccessFailedCount = 0,
-                            Address = "592 Daniella Freeway, South Lorenview, Chad",
-                            BirthDate = new DateTime(2003, 5, 3, 17, 41, 35, 131, DateTimeKind.Local).AddTicks(610),
-                            ConcurrencyStamp = "d18a5a1b-6d50-49cd-ad00-38be816362c7",
-                            Email = "faustino97.boyle@yahoo.com",
-                            EmailConfirmed = false,
-                            Gender = 1,
-                            LockoutEnabled = false,
-                            PasswordHash = "VbgHhRbI",
-                            PhoneNumber = "564-855-2904",
-                            PhoneNumberConfirmed = false,
-                            TwoFactorEnabled = false,
-                            UserName = "Ned_Mayer67"
-                        },
-                        new
-                        {
-                            Id = new Guid("f675fdcb-be13-5729-fb1e-381a95903a25"),
-                            AccessFailedCount = 0,
-                            Address = "570 Corwin Drives, Erwinfort, Tokelau",
-                            BirthDate = new DateTime(1977, 9, 19, 3, 39, 24, 119, DateTimeKind.Local).AddTicks(77),
-                            ConcurrencyStamp = "4f166a89-6fdd-4dce-999f-84dbeee6b744",
-                            Email = "felix.doyle21.flatley@yahoo.com",
-                            EmailConfirmed = false,
-                            Gender = 2,
-                            LockoutEnabled = false,
-                            PasswordHash = "PTTInNIK",
-                            PhoneNumber = "610.998.6129 x1645",
-                            PhoneNumberConfirmed = false,
-                            TwoFactorEnabled = false,
-                            UserName = "Ron76"
-                        },
-                        new
-                        {
-                            Id = new Guid("95354688-ac81-0c2b-720c-e653e3a6f10d"),
-                            AccessFailedCount = 0,
-                            Address = "6160 Nona Streets, East Oceaneshire, Estonia",
-                            BirthDate = new DateTime(1977, 6, 8, 22, 27, 57, 200, DateTimeKind.Local).AddTicks(2919),
-                            ConcurrencyStamp = "cbfc7fc9-5fdc-4b8d-a844-ec75a41e8a30",
-                            Email = "genesis.altenwerth_hansen@yahoo.com",
-                            EmailConfirmed = false,
-                            Gender = 2,
-                            LockoutEnabled = false,
-                            PasswordHash = "AFsCYnft",
-                            PhoneNumber = "262-608-6701 x58403",
-                            PhoneNumberConfirmed = false,
-                            TwoFactorEnabled = false,
-                            UserName = "Alford.McKenzie"
+                            UserName = "Nadia.Muller51"
                         });
                 });
 
@@ -460,13 +460,13 @@ namespace HotCatCafe.DAL.Migrations
                         new
                         {
                             ID = 1,
-                            CategoryName = "Desserts",
+                            CategoryName = "Coffees",
                             CreatedComputerName = "LAPTOP-7RVI861P",
-                            CreatedDate = new DateTime(2024, 7, 20, 18, 3, 3, 79, DateTimeKind.Local).AddTicks(5908),
+                            CreatedDate = new DateTime(2024, 8, 2, 16, 36, 7, 854, DateTimeKind.Local).AddTicks(2091),
                             CreatedIpAddress = 2,
-                            Description = "Veniam vitae dolores totam in qui consectetur doloribus aspernatur reprehenderit.",
+                            Description = "Various types of coffee.",
                             IsActive = true,
-                            MasterId = new Guid("489402f0-ec54-4d08-9d9b-d60fa850e347"),
+                            MasterId = new Guid("21e3f335-1aba-4ba1-b674-2492481ac664"),
                             Status = 0,
                             UpdatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified)
                         },
@@ -475,180 +475,115 @@ namespace HotCatCafe.DAL.Migrations
                             ID = 2,
                             CategoryName = "Desserts",
                             CreatedComputerName = "LAPTOP-7RVI861P",
-                            CreatedDate = new DateTime(2024, 7, 20, 18, 3, 3, 79, DateTimeKind.Local).AddTicks(6224),
+                            CreatedDate = new DateTime(2024, 8, 2, 16, 36, 7, 854, DateTimeKind.Local).AddTicks(2229),
                             CreatedIpAddress = 2,
-                            Description = "Praesentium sunt eos alias et laudantium et et.",
+                            Description = "Sweet treats and desserts.",
                             IsActive = true,
-                            MasterId = new Guid("97c4ce5e-3bfd-422d-9736-e25715739049"),
+                            MasterId = new Guid("7caf9f05-9cfa-42d3-9397-add14786abdc"),
                             Status = 0,
                             UpdatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified)
                         },
                         new
                         {
                             ID = 3,
-                            CategoryName = "Salads",
+                            CategoryName = "Teas",
                             CreatedComputerName = "LAPTOP-7RVI861P",
-                            CreatedDate = new DateTime(2024, 7, 20, 18, 3, 3, 79, DateTimeKind.Local).AddTicks(6310),
+                            CreatedDate = new DateTime(2024, 8, 2, 16, 36, 7, 854, DateTimeKind.Local).AddTicks(2233),
                             CreatedIpAddress = 2,
-                            Description = "Labore minus beatae iusto tenetur omnis est libero ipsa ex.",
+                            Description = "Different types of tea.",
                             IsActive = true,
-                            MasterId = new Guid("871196f1-9feb-485a-a0b3-041269050595"),
+                            MasterId = new Guid("4b397609-f121-4711-8575-f7ea8791a449"),
                             Status = 0,
                             UpdatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified)
                         },
                         new
                         {
                             ID = 4,
-                            CategoryName = "Snacks",
+                            CategoryName = "Sandwiches",
                             CreatedComputerName = "LAPTOP-7RVI861P",
-                            CreatedDate = new DateTime(2024, 7, 20, 18, 3, 3, 79, DateTimeKind.Local).AddTicks(6353),
+                            CreatedDate = new DateTime(2024, 8, 2, 16, 36, 7, 854, DateTimeKind.Local).AddTicks(2236),
                             CreatedIpAddress = 2,
-                            Description = "Animi earum quaerat est aspernatur non ut debitis.",
+                            Description = "Assorted sandwiches.",
                             IsActive = true,
-                            MasterId = new Guid("cb03cf6b-4850-4774-b681-b57e6073a287"),
+                            MasterId = new Guid("c8cce6d5-e4fe-467c-86aa-efce186932d0"),
                             Status = 0,
                             UpdatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified)
                         },
                         new
                         {
                             ID = 5,
-                            CategoryName = "Ice Creams",
+                            CategoryName = "Salads",
                             CreatedComputerName = "LAPTOP-7RVI861P",
-                            CreatedDate = new DateTime(2024, 7, 20, 18, 3, 3, 79, DateTimeKind.Local).AddTicks(6384),
+                            CreatedDate = new DateTime(2024, 8, 2, 16, 36, 7, 854, DateTimeKind.Local).AddTicks(2238),
                             CreatedIpAddress = 2,
-                            Description = "Vel in sint non maiores aliquid ut.",
+                            Description = "Fresh and healthy salads.",
                             IsActive = true,
-                            MasterId = new Guid("b23067c2-d2b3-430f-b31f-25f6903d3089"),
+                            MasterId = new Guid("782a9607-447d-4332-adf9-8c30da3c3dfc"),
                             Status = 0,
                             UpdatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified)
                         },
                         new
                         {
                             ID = 6,
-                            CategoryName = "Cakes",
+                            CategoryName = "Snacks",
                             CreatedComputerName = "LAPTOP-7RVI861P",
-                            CreatedDate = new DateTime(2024, 7, 20, 18, 3, 3, 79, DateTimeKind.Local).AddTicks(6414),
+                            CreatedDate = new DateTime(2024, 8, 2, 16, 36, 7, 854, DateTimeKind.Local).AddTicks(2241),
                             CreatedIpAddress = 2,
-                            Description = "Non sint beatae deleniti soluta dicta.",
+                            Description = "Light snacks and nibbles.",
                             IsActive = true,
-                            MasterId = new Guid("63236bfd-3fe6-4892-af6d-684a41eff635"),
+                            MasterId = new Guid("ac604de4-237a-4875-8287-23d18c44d19b"),
                             Status = 0,
                             UpdatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified)
                         },
                         new
                         {
                             ID = 7,
-                            CategoryName = "Sandwiches",
+                            CategoryName = "Fruit Juices",
                             CreatedComputerName = "LAPTOP-7RVI861P",
-                            CreatedDate = new DateTime(2024, 7, 20, 18, 3, 3, 79, DateTimeKind.Local).AddTicks(6435),
+                            CreatedDate = new DateTime(2024, 8, 2, 16, 36, 7, 854, DateTimeKind.Local).AddTicks(2243),
                             CreatedIpAddress = 2,
-                            Description = "Commodi tenetur et quibusdam laudantium.",
+                            Description = "Refreshing fruit juices.",
                             IsActive = true,
-                            MasterId = new Guid("72a167d9-f07b-493b-8e81-9ce98e65a054"),
+                            MasterId = new Guid("1cb96695-84a7-4713-b163-015cb0fff32d"),
                             Status = 0,
                             UpdatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified)
                         },
                         new
                         {
                             ID = 8,
-                            CategoryName = "Salads",
+                            CategoryName = "Cakes",
                             CreatedComputerName = "LAPTOP-7RVI861P",
-                            CreatedDate = new DateTime(2024, 7, 20, 18, 3, 3, 79, DateTimeKind.Local).AddTicks(6453),
+                            CreatedDate = new DateTime(2024, 8, 2, 16, 36, 7, 854, DateTimeKind.Local).AddTicks(2245),
                             CreatedIpAddress = 2,
-                            Description = "Et molestiae maiores accusamus voluptatem quidem aliquid consequatur quis.",
+                            Description = "Varieties of cakes.",
                             IsActive = true,
-                            MasterId = new Guid("ec028b98-73c8-4e52-886d-73880e8fb619"),
+                            MasterId = new Guid("d904b62e-a300-41df-acb6-b96faf13091b"),
                             Status = 0,
                             UpdatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified)
                         },
                         new
                         {
                             ID = 9,
-                            CategoryName = "Fruit Juices",
+                            CategoryName = "Ice Creams",
                             CreatedComputerName = "LAPTOP-7RVI861P",
-                            CreatedDate = new DateTime(2024, 7, 20, 18, 3, 3, 79, DateTimeKind.Local).AddTicks(6499),
+                            CreatedDate = new DateTime(2024, 8, 2, 16, 36, 7, 854, DateTimeKind.Local).AddTicks(2256),
                             CreatedIpAddress = 2,
-                            Description = "Alias earum ratione pariatur ex sed.",
+                            Description = "Various ice cream flavors.",
                             IsActive = true,
-                            MasterId = new Guid("40e9d26a-35dc-4f69-925d-bcd67c375b97"),
+                            MasterId = new Guid("0527feb3-7d9c-4906-bc13-5813c163e7f8"),
                             Status = 0,
                             UpdatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified)
                         },
                         new
                         {
                             ID = 10,
-                            CategoryName = "Cakes",
-                            CreatedComputerName = "LAPTOP-7RVI861P",
-                            CreatedDate = new DateTime(2024, 7, 20, 18, 3, 3, 79, DateTimeKind.Local).AddTicks(6565),
-                            CreatedIpAddress = 2,
-                            Description = "Ut qui est architecto voluptas laudantium ea ducimus eum earum.",
-                            IsActive = true,
-                            MasterId = new Guid("66f4e690-4c44-4ac7-aa82-08a2b34619b2"),
-                            Status = 0,
-                            UpdatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified)
-                        },
-                        new
-                        {
-                            ID = 11,
-                            CategoryName = "Salads",
-                            CreatedComputerName = "LAPTOP-7RVI861P",
-                            CreatedDate = new DateTime(2024, 7, 20, 18, 3, 3, 79, DateTimeKind.Local).AddTicks(6596),
-                            CreatedIpAddress = 2,
-                            Description = "Non qui numquam.",
-                            IsActive = true,
-                            MasterId = new Guid("cfbfaacd-5157-425b-9641-2eef3261565c"),
-                            Status = 0,
-                            UpdatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified)
-                        },
-                        new
-                        {
-                            ID = 12,
                             CategoryName = "Chocolates",
                             CreatedComputerName = "LAPTOP-7RVI861P",
-                            CreatedDate = new DateTime(2024, 7, 20, 18, 3, 3, 79, DateTimeKind.Local).AddTicks(6610),
+                            CreatedDate = new DateTime(2024, 8, 2, 16, 36, 7, 854, DateTimeKind.Local).AddTicks(2295),
                             CreatedIpAddress = 2,
-                            Description = "Nobis aut aut rerum est qui veritatis.",
+                            Description = "Different types of chocolates.",
                             IsActive = true,
-                            MasterId = new Guid("68dd0958-121f-455d-aedc-076bb199d064"),
-                            Status = 0,
-                            UpdatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified)
-                        },
-                        new
-                        {
-                            ID = 13,
-                            CategoryName = "Coffees",
-                            CreatedComputerName = "LAPTOP-7RVI861P",
-                            CreatedDate = new DateTime(2024, 7, 20, 18, 3, 3, 79, DateTimeKind.Local).AddTicks(6637),
-                            CreatedIpAddress = 2,
-                            Description = "Rerum rerum a dolor.",
-                            IsActive = true,
-                            MasterId = new Guid("dd01e3d8-bc20-44eb-91ac-36be05812039"),
-                            Status = 0,
-                            UpdatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified)
-                        },
-                        new
-                        {
-                            ID = 14,
-                            CategoryName = "Teas",
-                            CreatedComputerName = "LAPTOP-7RVI861P",
-                            CreatedDate = new DateTime(2024, 7, 20, 18, 3, 3, 79, DateTimeKind.Local).AddTicks(6655),
-                            CreatedIpAddress = 2,
-                            Description = "Reprehenderit quo eveniet sint cumque eius dicta.",
-                            IsActive = true,
-                            MasterId = new Guid("cd4b51ed-3139-4e22-9951-56bb3c917c04"),
-                            Status = 0,
-                            UpdatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified)
-                        },
-                        new
-                        {
-                            ID = 15,
-                            CategoryName = "Salads",
-                            CreatedComputerName = "LAPTOP-7RVI861P",
-                            CreatedDate = new DateTime(2024, 7, 20, 18, 3, 3, 79, DateTimeKind.Local).AddTicks(6678),
-                            CreatedIpAddress = 2,
-                            Description = "Nisi qui ullam animi similique delectus similique et deserunt.",
-                            IsActive = true,
-                            MasterId = new Guid("8b47ce8c-bc6f-4522-b6d2-46d13a6ab21f"),
+                            MasterId = new Guid("380fec55-4795-4104-ad92-61c8e77d8173"),
                             Status = 0,
                             UpdatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified)
                         });
@@ -777,11 +712,11 @@ namespace HotCatCafe.DAL.Migrations
                         {
                             ID = 1,
                             CreatedComputerName = "LAPTOP-7RVI861P",
-                            CreatedDate = new DateTime(2024, 7, 20, 18, 3, 3, 86, DateTimeKind.Local).AddTicks(3146),
+                            CreatedDate = new DateTime(2024, 8, 2, 16, 36, 7, 858, DateTimeKind.Local).AddTicks(3534),
                             CreatedIpAddress = 2,
                             IsActive = true,
-                            MasterId = new Guid("22d6baa2-74eb-41b4-a01a-3427cbaef26d"),
-                            OrderDate = new DateTime(2024, 7, 20, 18, 3, 3, 86, DateTimeKind.Local).AddTicks(3193),
+                            MasterId = new Guid("7128f0e1-3b9b-4170-8b76-3187f3d3355d"),
+                            OrderDate = new DateTime(2024, 8, 2, 16, 36, 7, 858, DateTimeKind.Local).AddTicks(3599),
                             Status = 0,
                             TotalAmount = 100.00m,
                             UpdatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified)
@@ -790,11 +725,8 @@ namespace HotCatCafe.DAL.Migrations
 
             modelBuilder.Entity("HotCatCafe.Model.Entities.OrderDetail", b =>
                 {
-                    b.Property<int>("ID")
-                        .ValueGeneratedOnAdd()
+                    b.Property<int>("OrderId")
                         .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ID"));
 
                     b.Property<string>("CreatedComputerName")
                         .IsRequired()
@@ -809,14 +741,14 @@ namespace HotCatCafe.DAL.Migrations
                     b.Property<double>("Discount")
                         .HasColumnType("float");
 
+                    b.Property<int>("ID")
+                        .HasColumnType("int");
+
                     b.Property<bool>("IsActive")
                         .HasColumnType("bit");
 
                     b.Property<Guid>("MasterId")
                         .HasColumnType("uniqueidentifier");
-
-                    b.Property<int>("OrderId")
-                        .HasColumnType("int");
 
                     b.Property<int>("ProductId")
                         .HasColumnType("int");
@@ -839,9 +771,7 @@ namespace HotCatCafe.DAL.Migrations
                     b.Property<string>("UpdatedIpAddress")
                         .HasColumnType("nvarchar(max)");
 
-                    b.HasKey("ID");
-
-                    b.HasIndex("OrderId");
+                    b.HasKey("OrderId");
 
                     b.HasIndex("ProductId");
 
@@ -926,8 +856,8 @@ namespace HotCatCafe.DAL.Migrations
                     b.Property<DateTime?>("Discontinued")
                         .HasColumnType("datetime2");
 
-                    b.Property<double>("Discount")
-                        .HasColumnType("float");
+                    b.Property<decimal>("Discount")
+                        .HasColumnType("decimal(18,2)");
 
                     b.Property<string>("ImagePath")
                         .HasColumnType("nvarchar(max)");
@@ -949,14 +879,11 @@ namespace HotCatCafe.DAL.Migrations
                         .HasMaxLength(255)
                         .HasColumnType("nvarchar(255)");
 
-                    b.Property<int>("ProductStatus")
-                        .HasColumnType("int");
-
                     b.Property<int>("Status")
                         .HasColumnType("int");
 
-                    b.Property<short>("Stock")
-                        .HasColumnType("smallint");
+                    b.Property<int>("Stock")
+                        .HasColumnType("int");
 
                     b.Property<string>("UpdatedComputerName")
                         .HasColumnType("nvarchar(max)");
@@ -979,79 +906,75 @@ namespace HotCatCafe.DAL.Migrations
                             ID = 1,
                             CategoryId = 1,
                             CreatedComputerName = "LAPTOP-7RVI861P",
-                            CreatedDate = new DateTime(2024, 7, 20, 18, 3, 3, 81, DateTimeKind.Local).AddTicks(7862),
+                            CreatedDate = new DateTime(2024, 8, 2, 16, 36, 7, 854, DateTimeKind.Local).AddTicks(4842),
                             CreatedIpAddress = 2,
                             DataSize = 0,
-                            Discount = 0.029999999999999999,
-                            ImagePath = "https://picsum.photos/640/480/?image=883",
+                            Discount = 0.1m,
+                            ImagePath = "espresso.jpg",
                             IsActive = true,
                             IsDiscontinued = false,
-                            MasterId = new Guid("e90e59b0-29c9-4fe0-8f8e-2fde6c5d18cb"),
-                            Price = 213.79m,
-                            ProductName = "Coffee Soda",
-                            ProductStatus = 0,
+                            MasterId = new Guid("90f29880-138e-43d1-95ee-71f2f236353e"),
+                            Price = 2.49m,
+                            ProductName = "Espresso",
                             Status = 0,
-                            Stock = (short)56,
+                            Stock = 50,
                             UpdatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified)
                         },
                         new
                         {
                             ID = 2,
-                            CategoryId = 4,
+                            CategoryId = 1,
                             CreatedComputerName = "LAPTOP-7RVI861P",
-                            CreatedDate = new DateTime(2024, 7, 20, 18, 3, 3, 81, DateTimeKind.Local).AddTicks(8119),
+                            CreatedDate = new DateTime(2024, 8, 2, 16, 36, 7, 854, DateTimeKind.Local).AddTicks(4896),
                             CreatedIpAddress = 2,
                             DataSize = 0,
-                            Discount = 0.14000000000000001,
-                            ImagePath = "https://picsum.photos/640/480/?image=429",
+                            Discount = 0.15m,
+                            ImagePath = "latte.jpg",
                             IsActive = true,
                             IsDiscontinued = false,
-                            MasterId = new Guid("206e5f84-3301-428a-8a71-99dd2c0d5141"),
-                            Price = 72.52m,
-                            ProductName = "Macchiato",
-                            ProductStatus = 0,
+                            MasterId = new Guid("6680b7a1-659f-4cb8-b9fe-ff0d142fce5a"),
+                            Price = 3.49m,
+                            ProductName = "Latte",
                             Status = 0,
-                            Stock = (short)9,
+                            Stock = 30,
                             UpdatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified)
                         },
                         new
                         {
                             ID = 3,
-                            CategoryId = 9,
+                            CategoryId = 2,
                             CreatedComputerName = "LAPTOP-7RVI861P",
-                            CreatedDate = new DateTime(2024, 7, 20, 18, 3, 3, 81, DateTimeKind.Local).AddTicks(8135),
+                            CreatedDate = new DateTime(2024, 8, 2, 16, 36, 7, 854, DateTimeKind.Local).AddTicks(4900),
                             CreatedIpAddress = 2,
                             DataSize = 0,
-                            Discount = 0.040000000000000001,
-                            ImagePath = "https://picsum.photos/640/480/?image=1056",
+                            Discount = 0.2m,
+                            ImagePath = "cheesecake.jpg",
                             IsActive = true,
                             IsDiscontinued = false,
-                            MasterId = new Guid("a87ee31a-95f2-48cf-ac73-837c99309750"),
-                            Price = 720.50m,
-                            ProductName = "Americano",
-                            ProductStatus = 0,
+                            MasterId = new Guid("5fed0a1a-2f87-4872-9974-4c2c34d898d4"),
+                            Price = 4.99m,
+                            ProductName = "Cheesecake",
                             Status = 0,
-                            Stock = (short)20,
+                            Stock = 20,
                             UpdatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified)
                         },
                         new
                         {
                             ID = 4,
-                            CategoryId = 7,
+                            CategoryId = 2,
                             CreatedComputerName = "LAPTOP-7RVI861P",
-                            CreatedDate = new DateTime(2024, 7, 20, 18, 3, 3, 81, DateTimeKind.Local).AddTicks(8147),
+                            CreatedDate = new DateTime(2024, 8, 2, 16, 36, 7, 854, DateTimeKind.Local).AddTicks(4903),
                             CreatedIpAddress = 2,
                             DataSize = 0,
-                            Discount = 0.070000000000000007,
-                            ImagePath = "https://picsum.photos/640/480/?image=849",
+                            Discount = 0.1m,
+                            ImagePath = "brownie.jpg",
                             IsActive = true,
                             IsDiscontinued = false,
-                            MasterId = new Guid("d575756a-cc5d-4279-9785-43281fa1e495"),
-                            Price = 155.76m,
-                            ProductName = "Frappé",
-                            ProductStatus = 0,
+                            MasterId = new Guid("3590de36-4b03-4696-be5f-042f7ff8b908"),
+                            Price = 3.99m,
+                            ProductName = "Brownie",
                             Status = 0,
-                            Stock = (short)89,
+                            Stock = 25,
                             UpdatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified)
                         },
                         new
@@ -1059,159 +982,151 @@ namespace HotCatCafe.DAL.Migrations
                             ID = 5,
                             CategoryId = 3,
                             CreatedComputerName = "LAPTOP-7RVI861P",
-                            CreatedDate = new DateTime(2024, 7, 20, 18, 3, 3, 81, DateTimeKind.Local).AddTicks(8156),
+                            CreatedDate = new DateTime(2024, 8, 2, 16, 36, 7, 854, DateTimeKind.Local).AddTicks(4906),
                             CreatedIpAddress = 2,
                             DataSize = 0,
-                            Discount = 0.17000000000000001,
-                            ImagePath = "https://picsum.photos/640/480/?image=1010",
+                            Discount = 0.05m,
+                            ImagePath = "greentea.jpg",
                             IsActive = true,
                             IsDiscontinued = false,
-                            MasterId = new Guid("78f22eb1-fdf8-4bc7-b7a7-14a77bb5bc62"),
-                            Price = 879.26m,
-                            ProductName = "Coffee Martini",
-                            ProductStatus = 0,
+                            MasterId = new Guid("ac613aa4-c690-418b-915e-9ea7db62b48b"),
+                            Price = 2.99m,
+                            ProductName = "Green Tea",
                             Status = 0,
-                            Stock = (short)79,
+                            Stock = 40,
                             UpdatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified)
                         },
                         new
                         {
                             ID = 6,
-                            CategoryId = 10,
+                            CategoryId = 3,
                             CreatedComputerName = "LAPTOP-7RVI861P",
-                            CreatedDate = new DateTime(2024, 7, 20, 18, 3, 3, 81, DateTimeKind.Local).AddTicks(8166),
+                            CreatedDate = new DateTime(2024, 8, 2, 16, 36, 7, 854, DateTimeKind.Local).AddTicks(4908),
                             CreatedIpAddress = 2,
                             DataSize = 0,
-                            Discount = 0.01,
-                            ImagePath = "https://picsum.photos/640/480/?image=570",
+                            Discount = 0.1m,
+                            ImagePath = "blacktea.jpg",
                             IsActive = true,
                             IsDiscontinued = false,
-                            MasterId = new Guid("7d31fba4-4f2f-4ae8-a75b-7f6f9b3d7e8a"),
-                            Price = 524.63m,
-                            ProductName = "Tiramisu",
-                            ProductStatus = 0,
+                            MasterId = new Guid("1921a093-fe4a-436c-bd80-7fccf48d2023"),
+                            Price = 2.49m,
+                            ProductName = "Black Tea",
                             Status = 0,
-                            Stock = (short)16,
+                            Stock = 45,
                             UpdatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified)
                         },
                         new
                         {
                             ID = 7,
-                            CategoryId = 2,
+                            CategoryId = 4,
                             CreatedComputerName = "LAPTOP-7RVI861P",
-                            CreatedDate = new DateTime(2024, 7, 20, 18, 3, 3, 81, DateTimeKind.Local).AddTicks(8176),
+                            CreatedDate = new DateTime(2024, 8, 2, 16, 36, 7, 854, DateTimeKind.Local).AddTicks(4916),
                             CreatedIpAddress = 2,
                             DataSize = 0,
-                            Discount = 0.14000000000000001,
-                            ImagePath = "https://picsum.photos/640/480/?image=638",
+                            Discount = 0.1m,
+                            ImagePath = "turkeysandwich.jpg",
                             IsActive = true,
                             IsDiscontinued = false,
-                            MasterId = new Guid("f8bacd30-d36e-4961-bdd9-1f3dc289125e"),
-                            Price = 742.61m,
-                            ProductName = "Trifle",
-                            ProductStatus = 0,
+                            MasterId = new Guid("0341acc6-1cfa-4fa3-876e-b06e46a4c467"),
+                            Price = 5.49m,
+                            ProductName = "Turkey Sandwich",
                             Status = 0,
-                            Stock = (short)40,
+                            Stock = 35,
                             UpdatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified)
                         },
                         new
                         {
                             ID = 8,
-                            CategoryId = 2,
+                            CategoryId = 4,
                             CreatedComputerName = "LAPTOP-7RVI861P",
-                            CreatedDate = new DateTime(2024, 7, 20, 18, 3, 3, 81, DateTimeKind.Local).AddTicks(8184),
+                            CreatedDate = new DateTime(2024, 8, 2, 16, 36, 7, 854, DateTimeKind.Local).AddTicks(4920),
                             CreatedIpAddress = 2,
                             DataSize = 0,
-                            Discount = 0.059999999999999998,
-                            ImagePath = "https://picsum.photos/640/480/?image=169",
+                            Discount = 0.2m,
+                            ImagePath = "veggiesandwich.jpg",
                             IsActive = true,
                             IsDiscontinued = false,
-                            MasterId = new Guid("6db94e90-0c8b-450e-a072-99c3d7b8d16a"),
-                            Price = 858.16m,
-                            ProductName = "Cheesecake",
-                            ProductStatus = 0,
+                            MasterId = new Guid("169dc546-fcb0-4c1b-bcb4-ad1c9b8ac40e"),
+                            Price = 4.99m,
+                            ProductName = "Veggie Sandwich",
                             Status = 0,
-                            Stock = (short)5,
+                            Stock = 50,
                             UpdatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified)
                         },
                         new
                         {
                             ID = 9,
-                            CategoryId = 6,
+                            CategoryId = 5,
                             CreatedComputerName = "LAPTOP-7RVI861P",
-                            CreatedDate = new DateTime(2024, 7, 20, 18, 3, 3, 81, DateTimeKind.Local).AddTicks(8193),
+                            CreatedDate = new DateTime(2024, 8, 2, 16, 36, 7, 854, DateTimeKind.Local).AddTicks(4923),
                             CreatedIpAddress = 2,
                             DataSize = 0,
-                            Discount = 0.17000000000000001,
-                            ImagePath = "https://picsum.photos/640/480/?image=698",
+                            Discount = 0.15m,
+                            ImagePath = "caesarsalad.jpg",
                             IsActive = true,
                             IsDiscontinued = false,
-                            MasterId = new Guid("52b8b81e-1b28-4653-8f57-ddcbff7801de"),
-                            Price = 11.90m,
-                            ProductName = "Cheesecake",
-                            ProductStatus = 0,
+                            MasterId = new Guid("1450017c-94d3-4a26-b7f7-177ceeb7e7e8"),
+                            Price = 6.99m,
+                            ProductName = "Caesar Salad",
                             Status = 0,
-                            Stock = (short)31,
+                            Stock = 15,
                             UpdatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified)
                         },
                         new
                         {
                             ID = 10,
-                            CategoryId = 1,
+                            CategoryId = 5,
                             CreatedComputerName = "LAPTOP-7RVI861P",
-                            CreatedDate = new DateTime(2024, 7, 20, 18, 3, 3, 81, DateTimeKind.Local).AddTicks(8206),
+                            CreatedDate = new DateTime(2024, 8, 2, 16, 36, 7, 854, DateTimeKind.Local).AddTicks(4929),
                             CreatedIpAddress = 2,
                             DataSize = 0,
-                            Discount = 0.14999999999999999,
-                            ImagePath = "https://picsum.photos/640/480/?image=861",
+                            Discount = 0.1m,
+                            ImagePath = "greeksalad.jpg",
                             IsActive = true,
                             IsDiscontinued = false,
-                            MasterId = new Guid("84934e95-8eee-40d2-9c33-60c3b1779dc9"),
-                            Price = 814.74m,
-                            ProductName = "Fruit Salad",
-                            ProductStatus = 0,
+                            MasterId = new Guid("3815b91c-3b15-4023-91e1-de79bfc7fe70"),
+                            Price = 5.99m,
+                            ProductName = "Greek Salad",
                             Status = 0,
-                            Stock = (short)48,
+                            Stock = 20,
                             UpdatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified)
                         },
                         new
                         {
                             ID = 11,
-                            CategoryId = 3,
+                            CategoryId = 6,
                             CreatedComputerName = "LAPTOP-7RVI861P",
-                            CreatedDate = new DateTime(2024, 7, 20, 18, 3, 3, 81, DateTimeKind.Local).AddTicks(8243),
+                            CreatedDate = new DateTime(2024, 8, 2, 16, 36, 7, 854, DateTimeKind.Local).AddTicks(4931),
                             CreatedIpAddress = 2,
                             DataSize = 0,
-                            Discount = 0.34000000000000002,
-                            ImagePath = "https://picsum.photos/640/480/?image=905",
+                            Discount = 0.05m,
+                            ImagePath = "chips.jpg",
                             IsActive = true,
                             IsDiscontinued = false,
-                            MasterId = new Guid("f5044f38-a1ca-47df-9584-4051b98246ab"),
-                            Price = 498.07m,
-                            ProductName = "Brownie",
-                            ProductStatus = 0,
+                            MasterId = new Guid("e22673ec-89f1-45dd-a687-6b515893e0e9"),
+                            Price = 1.99m,
+                            ProductName = "Chips",
                             Status = 0,
-                            Stock = (short)70,
+                            Stock = 60,
                             UpdatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified)
                         },
                         new
                         {
                             ID = 12,
-                            CategoryId = 4,
+                            CategoryId = 6,
                             CreatedComputerName = "LAPTOP-7RVI861P",
-                            CreatedDate = new DateTime(2024, 7, 20, 18, 3, 3, 81, DateTimeKind.Local).AddTicks(8253),
+                            CreatedDate = new DateTime(2024, 8, 2, 16, 36, 7, 854, DateTimeKind.Local).AddTicks(4934),
                             CreatedIpAddress = 2,
                             DataSize = 0,
-                            Discount = 0.40000000000000002,
-                            ImagePath = "https://picsum.photos/640/480/?image=314",
+                            Discount = 0.1m,
+                            ImagePath = "pretzels.jpg",
                             IsActive = true,
                             IsDiscontinued = false,
-                            MasterId = new Guid("0e4546ea-ac16-45fc-835c-a13e2579d7d4"),
-                            Price = 759.29m,
-                            ProductName = "Brownie",
-                            ProductStatus = 0,
+                            MasterId = new Guid("6480a8f5-16a7-4680-8eb2-aa9e598e259a"),
+                            Price = 2.49m,
+                            ProductName = "Pretzels",
                             Status = 0,
-                            Stock = (short)5,
+                            Stock = 70,
                             UpdatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified)
                         },
                         new
@@ -1219,139 +1134,132 @@ namespace HotCatCafe.DAL.Migrations
                             ID = 13,
                             CategoryId = 7,
                             CreatedComputerName = "LAPTOP-7RVI861P",
-                            CreatedDate = new DateTime(2024, 7, 20, 18, 3, 3, 81, DateTimeKind.Local).AddTicks(8262),
+                            CreatedDate = new DateTime(2024, 8, 2, 16, 36, 7, 854, DateTimeKind.Local).AddTicks(4937),
                             CreatedIpAddress = 2,
                             DataSize = 0,
-                            Discount = 0.31,
-                            ImagePath = "https://picsum.photos/640/480/?image=1006",
+                            Discount = 0.1m,
+                            ImagePath = "orangejuice.jpg",
                             IsActive = true,
                             IsDiscontinued = false,
-                            MasterId = new Guid("6972aaa0-ea22-4db9-aeff-00e15992532e"),
-                            Price = 535.98m,
-                            ProductName = "Americano",
-                            ProductStatus = 0,
+                            MasterId = new Guid("b4baeceb-9ec0-4649-8c17-f686e3bee8e5"),
+                            Price = 3.29m,
+                            ProductName = "Orange Juice",
                             Status = 0,
-                            Stock = (short)54,
+                            Stock = 50,
                             UpdatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified)
                         },
                         new
                         {
                             ID = 14,
-                            CategoryId = 1,
+                            CategoryId = 7,
                             CreatedComputerName = "LAPTOP-7RVI861P",
-                            CreatedDate = new DateTime(2024, 7, 20, 18, 3, 3, 81, DateTimeKind.Local).AddTicks(8271),
+                            CreatedDate = new DateTime(2024, 8, 2, 16, 36, 7, 854, DateTimeKind.Local).AddTicks(4940),
                             CreatedIpAddress = 2,
                             DataSize = 0,
-                            Discount = 0.02,
-                            ImagePath = "https://picsum.photos/640/480/?image=231",
+                            Discount = 0.05m,
+                            ImagePath = "applejuice.jpg",
                             IsActive = true,
                             IsDiscontinued = false,
-                            MasterId = new Guid("b1dccabe-081d-43a3-a839-5eda889e4477"),
-                            Price = 33.61m,
-                            ProductName = "Turkish Coffee",
-                            ProductStatus = 0,
+                            MasterId = new Guid("086e5839-302c-4a9a-bec1-9440c25632c3"),
+                            Price = 2.99m,
+                            ProductName = "Apple Juice",
                             Status = 0,
-                            Stock = (short)74,
+                            Stock = 45,
                             UpdatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified)
                         },
                         new
                         {
                             ID = 15,
-                            CategoryId = 10,
+                            CategoryId = 8,
                             CreatedComputerName = "LAPTOP-7RVI861P",
-                            CreatedDate = new DateTime(2024, 7, 20, 18, 3, 3, 81, DateTimeKind.Local).AddTicks(8280),
+                            CreatedDate = new DateTime(2024, 8, 2, 16, 36, 7, 854, DateTimeKind.Local).AddTicks(4944),
                             CreatedIpAddress = 2,
                             DataSize = 0,
-                            Discount = 0.17000000000000001,
-                            ImagePath = "https://picsum.photos/640/480/?image=173",
+                            Discount = 0.2m,
+                            ImagePath = "chocolatecake.jpg",
                             IsActive = true,
                             IsDiscontinued = false,
-                            MasterId = new Guid("71f5f8d2-2343-4bc4-a644-5b70cb349275"),
-                            Price = 73.90m,
-                            ProductName = "Macaron",
-                            ProductStatus = 0,
+                            MasterId = new Guid("6b1f2cf3-6560-4401-b242-9dc76c76f8f7"),
+                            Price = 6.49m,
+                            ProductName = "Chocolate Cake",
                             Status = 0,
-                            Stock = (short)33,
+                            Stock = 10,
                             UpdatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified)
                         },
                         new
                         {
                             ID = 16,
-                            CategoryId = 7,
+                            CategoryId = 8,
                             CreatedComputerName = "LAPTOP-7RVI861P",
-                            CreatedDate = new DateTime(2024, 7, 20, 18, 3, 3, 81, DateTimeKind.Local).AddTicks(8290),
+                            CreatedDate = new DateTime(2024, 8, 2, 16, 36, 7, 854, DateTimeKind.Local).AddTicks(4947),
                             CreatedIpAddress = 2,
                             DataSize = 0,
-                            Discount = 0.32000000000000001,
-                            ImagePath = "https://picsum.photos/640/480/?image=53",
+                            Discount = 0.15m,
+                            ImagePath = "vanillacake.jpg",
                             IsActive = true,
                             IsDiscontinued = false,
-                            MasterId = new Guid("8b8d0271-8eda-44d8-ad96-421a52afff58"),
-                            Price = 66.18m,
-                            ProductName = "Cold Brew",
-                            ProductStatus = 0,
+                            MasterId = new Guid("aacfe4c2-1346-4318-93ca-856f56442495"),
+                            Price = 5.99m,
+                            ProductName = "Vanilla Cake",
                             Status = 0,
-                            Stock = (short)34,
+                            Stock = 15,
                             UpdatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified)
                         },
                         new
                         {
                             ID = 17,
-                            CategoryId = 1,
+                            CategoryId = 9,
                             CreatedComputerName = "LAPTOP-7RVI861P",
-                            CreatedDate = new DateTime(2024, 7, 20, 18, 3, 3, 81, DateTimeKind.Local).AddTicks(8299),
+                            CreatedDate = new DateTime(2024, 8, 2, 16, 36, 7, 854, DateTimeKind.Local).AddTicks(4950),
                             CreatedIpAddress = 2,
                             DataSize = 0,
-                            Discount = 0.11,
-                            ImagePath = "https://picsum.photos/640/480/?image=658",
+                            Discount = 0.1m,
+                            ImagePath = "vanillaicecream.jpg",
                             IsActive = true,
                             IsDiscontinued = false,
-                            MasterId = new Guid("97f50c13-9a92-4d0b-bafb-5d21ec822a4b"),
-                            Price = 95.56m,
-                            ProductName = "Cake",
-                            ProductStatus = 0,
+                            MasterId = new Guid("ad631006-f60a-4c4a-97d9-539c134c43f4"),
+                            Price = 4.49m,
+                            ProductName = "Vanilla Ice Cream",
                             Status = 0,
-                            Stock = (short)78,
+                            Stock = 25,
                             UpdatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified)
                         },
                         new
                         {
                             ID = 18,
-                            CategoryId = 2,
+                            CategoryId = 9,
                             CreatedComputerName = "LAPTOP-7RVI861P",
-                            CreatedDate = new DateTime(2024, 7, 20, 18, 3, 3, 81, DateTimeKind.Local).AddTicks(8311),
+                            CreatedDate = new DateTime(2024, 8, 2, 16, 36, 7, 854, DateTimeKind.Local).AddTicks(4953),
                             CreatedIpAddress = 2,
                             DataSize = 0,
-                            Discount = 0.45000000000000001,
-                            ImagePath = "https://picsum.photos/640/480/?image=605",
+                            Discount = 0.1m,
+                            ImagePath = "chocolateicecream.jpg",
                             IsActive = true,
                             IsDiscontinued = false,
-                            MasterId = new Guid("f9d7a168-cf9a-436d-839d-ed7d74b73914"),
-                            Price = 464.55m,
-                            ProductName = "Trifle",
-                            ProductStatus = 0,
+                            MasterId = new Guid("984154e7-f7d7-4054-bd7a-6c12a5853f58"),
+                            Price = 4.99m,
+                            ProductName = "Chocolate Ice Cream",
                             Status = 0,
-                            Stock = (short)10,
+                            Stock = 20,
                             UpdatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified)
                         },
                         new
                         {
                             ID = 19,
-                            CategoryId = 6,
+                            CategoryId = 10,
                             CreatedComputerName = "LAPTOP-7RVI861P",
-                            CreatedDate = new DateTime(2024, 7, 20, 18, 3, 3, 81, DateTimeKind.Local).AddTicks(8320),
+                            CreatedDate = new DateTime(2024, 8, 2, 16, 36, 7, 854, DateTimeKind.Local).AddTicks(4957),
                             CreatedIpAddress = 2,
                             DataSize = 0,
-                            Discount = 0.27000000000000002,
-                            ImagePath = "https://picsum.photos/640/480/?image=926",
+                            Discount = 0.05m,
+                            ImagePath = "darkchocolate.jpg",
                             IsActive = true,
                             IsDiscontinued = false,
-                            MasterId = new Guid("aa2a5596-7685-4c64-8a72-450f3cba9cfd"),
-                            Price = 408.73m,
-                            ProductName = "Cold Brew",
-                            ProductStatus = 0,
+                            MasterId = new Guid("725fc037-7a63-48e9-996a-825f541f5faf"),
+                            Price = 2.99m,
+                            ProductName = "Dark Chocolate",
                             Status = 0,
-                            Stock = (short)75,
+                            Stock = 30,
                             UpdatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified)
                         },
                         new
@@ -1359,19 +1267,18 @@ namespace HotCatCafe.DAL.Migrations
                             ID = 20,
                             CategoryId = 10,
                             CreatedComputerName = "LAPTOP-7RVI861P",
-                            CreatedDate = new DateTime(2024, 7, 20, 18, 3, 3, 81, DateTimeKind.Local).AddTicks(8329),
+                            CreatedDate = new DateTime(2024, 8, 2, 16, 36, 7, 854, DateTimeKind.Local).AddTicks(4992),
                             CreatedIpAddress = 2,
                             DataSize = 0,
-                            Discount = 0.070000000000000007,
-                            ImagePath = "https://picsum.photos/640/480/?image=142",
+                            Discount = 0.1m,
+                            ImagePath = "milkchocolate.jpg",
                             IsActive = true,
                             IsDiscontinued = false,
-                            MasterId = new Guid("4747dbb1-69fa-4c75-97a2-e03a29db1700"),
-                            Price = 800.44m,
-                            ProductName = "Cappuccino",
-                            ProductStatus = 0,
+                            MasterId = new Guid("eea7df5f-273c-45c2-a028-61b43b9d6732"),
+                            Price = 2.49m,
+                            ProductName = "Milk Chocolate",
                             Status = 0,
-                            Stock = (short)73,
+                            Stock = 40,
                             UpdatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified)
                         });
                 });
@@ -1613,7 +1520,7 @@ namespace HotCatCafe.DAL.Migrations
             modelBuilder.Entity("HotCatCafe.Model.Entities.OrderDetail", b =>
                 {
                     b.HasOne("HotCatCafe.Model.Entities.Order", "Order")
-                        .WithMany()
+                        .WithMany("OrderDetails")
                         .HasForeignKey("OrderId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
@@ -1621,7 +1528,7 @@ namespace HotCatCafe.DAL.Migrations
                     b.HasOne("HotCatCafe.Model.Entities.Product", "Product")
                         .WithMany()
                         .HasForeignKey("ProductId")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
                     b.Navigation("Order");
@@ -1736,6 +1643,11 @@ namespace HotCatCafe.DAL.Migrations
             modelBuilder.Entity("HotCatCafe.Model.Entities.Discount", b =>
                 {
                     b.Navigation("Orders");
+                });
+
+            modelBuilder.Entity("HotCatCafe.Model.Entities.Order", b =>
+                {
+                    b.Navigation("OrderDetails");
                 });
 
             modelBuilder.Entity("HotCatCafe.Model.Entities.Product", b =>

@@ -9,6 +9,7 @@ namespace HotCatCafe.DAL.Context
 {
     public class HotCatCafeContext:IdentityDbContext<AppUser,AppUserRole,Guid>
     {
+        //var configuration = new ConfigurationBuilder().SetBasePath(Directory.GetCurrentDirectory()).AddJsonFile("appsettings.json").Build();
         public HotCatCafeContext(DbContextOptions<HotCatCafeContext> options):base(options) { }
         
 
@@ -22,16 +23,7 @@ namespace HotCatCafe.DAL.Context
         public DbSet<Discount> Discounts { get; set; }
         public DbSet<Shipment> Shipments { get; set; }
 
-        //protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        //{
-        //    if (!optionsBuilder.IsConfigured)
-        //    {
-        //        optionsBuilder.UseSqlServer("Server=LAPTOP-7RVI861P\\SQLEXPRESS;Database=HotCatCafeDb;Trusted_Connection=True;TrustServerCertificate=True;");
-
-        //        base.OnConfiguring(optionsBuilder);
-        //    }
-
-        //}
+       
 
         protected override void OnModelCreating(ModelBuilder builder)
         {

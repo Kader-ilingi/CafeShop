@@ -1,6 +1,6 @@
 ﻿using HotCatCafe.Model.Entities;
 
-namespace HotCatCafe.BLL.Repositories.Abstracts.BaseAbstract
+namespace HotCatCafe.BLL.Repositories.Abstracts.BaseAbstract.EntityServices
 {
     public interface ICategoryRepository
     {

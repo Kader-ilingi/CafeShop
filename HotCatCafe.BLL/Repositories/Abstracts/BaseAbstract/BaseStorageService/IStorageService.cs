@@ -8,7 +8,7 @@ namespace HotCatCafe.BLL.Repositories.Abstracts.BaseAbstract.BaseStorageService
         IEnumerable<T> GetAll();
 
         //Get işlemleri
-        T GetById(int id);//Bu bize id ile isteklerimizi çağırmamıza olanak sağlar
+        T GetByIdAsync(int id);//Bu bize id ile isteklerimizi çağırmamıza olanak sağlar
 
         //GetActives
         IEnumerable<T> GetActives();

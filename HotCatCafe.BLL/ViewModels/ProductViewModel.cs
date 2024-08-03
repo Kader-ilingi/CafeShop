@@ -17,7 +17,7 @@ namespace HotCatCafe.BLL.ViewModels
         public decimal UnitPrice { get; set; }
 
         [Display(Name = "Ürün Stok")]
-        public short UnitsInStock { get; set; }
+        public int UnitsInStock { get; set; }
 
         [Display(Name = "Ürün Görsel")]
         public string? ImagePath { get; set; }

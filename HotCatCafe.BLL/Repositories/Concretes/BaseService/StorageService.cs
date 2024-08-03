@@ -124,7 +124,7 @@ namespace HotCatCafe.BLL.Repositories.Concretes.BaseService
             return _entities.ToList();//tolist ile LINQ sorgusu sonucunda varlıkların veritabanından alınarak belleğe alınmasını sağlamış oluyoruz.
         }
 
-        public T GetById(int id)
+        public T GetByIdAsync(int id)
         {
 
             try

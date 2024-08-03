@@ -1,5 +1,6 @@
-﻿using HotCatCafe.BLL.Repositories.Abstracts.BaseAbstract;
-using HotCatCafe.BLL.Repositories.Abstracts.BaseAbstract.BaseStorageService;
+﻿using HotCatCafe.BLL.Repositories.Abstracts.BaseAbstract.BaseStorageService;
+using HotCatCafe.BLL.Repositories.Abstracts.BaseAbstract.EntityServices;
+using HotCatCafe.DAL.Context;
 using HotCatCafe.Model.Entities;
 using HotCatCafe.Model.Enums;
 
@@ -9,10 +10,20 @@ namespace HotCatCafe.BLL.Repositories.Concretes.EntityServices
     {
         private readonly IStorageService<Product> _productStorageService;
 
-        public ProductService(IStorageService<Product> productStorageService)
+        private readonly HotCatCafeContext _cafeContext;
+        private HotCatCafeContext cafeContext;
+
+        public ProductService(IStorageService<Product> productStorageService, HotCatCafeContext cafeContext)
         {
             _productStorageService = productStorageService;
+            _cafeContext = cafeContext;
         }
+
+        public ProductService(HotCatCafeContext cafeContext)
+        {
+            this.cafeContext = cafeContext;
+        }
+
         public async Task<string> CreateProductAsync(Product product)
         {
            
@@ -65,13 +76,13 @@ namespace HotCatCafe.BLL.Repositories.Concretes.EntityServices
             return _productStorageService.GetAll().Where(x => x.CategoryId == categoryId).ToList();
 
         }
-
-        public  Product GetProductById(int id)
+        
+        public async Task<Product> GetProductByIdAsync(int productId)
         {
-            var product= _productStorageService.GetById(id);
+            var product=  _productStorageService.GetByIdAsync(productId);
             if(product == null)
             {
-                throw new Exception($"Product with id {id} not found.");
+                throw new Exception($"Product with id {productId} not found.");
             }
             return product;
         }
@@ -92,6 +103,8 @@ namespace HotCatCafe.BLL.Repositories.Concretes.EntityServices
             return _productStorageService.GetAll().Where(x=>x.Stock==0).ToList();//stok'u sıfırlanan ürünleri getirecektir
         }
 
+        
+
         public async Task<string> UpdateProductAsync(Product product)
         {
             try
@@ -107,7 +120,7 @@ namespace HotCatCafe.BLL.Repositories.Concretes.EntityServices
 
         public async Task<string> UpdateProductStatusById(int productId, DataStatus newStatus)
         {
-            var product = _productStorageService.GetById(productId);
+            var product = _productStorageService.GetByIdAsync(productId);
             if (product != null)
             {
                 product.Status = newStatus;
@@ -124,5 +137,7 @@ namespace HotCatCafe.BLL.Repositories.Concretes.EntityServices
         {
             throw new NotImplementedException();
         }
+
+        
     }
 }

@@ -1,5 +1,5 @@
-﻿using HotCatCafe.BLL.Repositories.Abstracts.BaseAbstract;
-using HotCatCafe.BLL.Repositories.Abstracts.BaseAbstract.BaseStorageService;
+﻿using HotCatCafe.BLL.Repositories.Abstracts.BaseAbstract.BaseStorageService;
+using HotCatCafe.BLL.Repositories.Abstracts.BaseAbstract.EntityServices;
 using HotCatCafe.Model.Entities;
 using System.Reflection.Metadata.Ecma335;
 
@@ -52,7 +52,7 @@ namespace HotCatCafe.BLL.Repositories.Concretes.EntityServices
 
         public Category GetCategoryById(int id)
         {
-            return _categoryRepository.GetById(id);
+            return _categoryRepository.GetByIdAsync(id);
            
             
         }

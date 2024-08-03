@@ -1,4 +1,4 @@
-﻿using HotCatCafe.BLL.Repositories.Abstracts.BaseAbstract;
+﻿using HotCatCafe.BLL.Repositories.Abstracts.BaseAbstract.EntityServices;
 using HotCatCafe.BLL.Repositories.Concretes.EntityServices;
 using HotCatCafe.BLL.ViewModels;
 using HotCatCafe.BLL.ViewModels.CategoryViewModels;
